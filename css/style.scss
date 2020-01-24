@@ -1,0 +1,101 @@
+@import './_utilities';
+
+html {
+    font-size: 16px;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-areas: 
+         "hero"
+         "offers"
+         "galery"
+         "catalog"
+         "comments"
+         "map";
+    
+    .landpage-1 {
+        grid-area: "hero";
+        background: $bg-green;
+        overflow: hidden;
+        height: 100vh;
+    }
+}
+
+.navbar {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media only screen and (min-width:1024px) {
+    grid-template-columns: repeat(12, 1fr);
+    }
+
+    .img-logo-container {
+        grid-column: 1 / 3;
+        @include d-flex(row);
+        padding: 1em;
+        margin-left: 1rem;
+        @media only screen and (min-width:1024px) {
+        grid-column: 2 / 4;
+        }
+    }
+
+    ul {
+
+        @include d-flex(row);
+        justify-content: flex-end;
+        grid-column: 4 / 4;
+        padding:0;
+        @media only screen and (min-width:1024px){
+        grid-column: -2 / -7
+        }
+
+        li{
+            @include reset-list(0,0);
+
+            a {
+                @include reset-link ($ligth);
+                font-family: $text;
+                font-weight: 400;
+                padding: 0 0.6rem;
+                font-size: 1vw;
+            }
+
+            i {
+                color:$ligth;
+                &:hover {
+                    cursor:pointer;
+                    transition: opacity 1s;
+                }
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+        }
+
+            .bg1 {
+                width: 32px;
+                height: 32px;
+                background-color: $bg-greeb-b;
+                @include d-flex(row);
+                margin: 0 0.6rem;
+            }
+
+            .bg2 {
+                @extend .bg1;
+                background-color: $primary;
+            }
+
+            .toggle {
+                @extend .bg1;
+                background-color: $bg-greeb-b;
+                @media only screen and (min-width:1024px) {
+                    display: none;
+                }
+            }
+
+        }
+
+    }
