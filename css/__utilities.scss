@@ -1,4 +1,5 @@
 $primary: #D8055A;
+$primary-hover:rgb(139, 9, 61);
 $ligth: #fcfcfc;
 $bg-green :#62C312;
 $bg-greeb-b:#87D249;
@@ -44,6 +45,16 @@ $text:'Montserrat', sans-serif;
     display: block;
 }
 
+@mixin btn ($width){
+    width: $width;
+    border-radius: 40px;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: $primary;
+    border:none;
+    box-shadow: 0px 5px 16px -8px rgba(0,0,0,0.75);
+}
+
 /* Some general clases to apply directly on html */
 
 .title {
@@ -62,6 +73,9 @@ $text:'Montserrat', sans-serif;
     @include img-res;
 }
 
+.white {
+    color:$ligth;
+}
 
 /* General styles for only desktop */
 
