@@ -6,6 +6,8 @@ $bg-greeb-b:#87D249;
 $figure: #69C71C;
 $title: 'Yeseva One', cursive;
 $text:'Montserrat', sans-serif;
+$dark: #202020;
+$small-text:13px;
 
 
 
@@ -75,6 +77,22 @@ $text:'Montserrat', sans-serif;
 
 .white {
     color:$ligth;
+}
+
+.hidden {
+    display: none;
+}
+
+.black {
+    color: $dark;
+}
+
+.primary {
+    color:$primary;
+}
+
+.d-inline {
+    display:inline-block;
 }
 
 /* General styles for only desktop */

@@ -1,6 +1,9 @@
 @import './_utilities';
 @import './_header';
 
+@import './_landpage-1';
+@import './_landpage-2';
+
 html {
     font-size: 16px;
 }
@@ -16,104 +19,18 @@ html {
          "catalog"
          "comments"
          "map";
-    
-    .landpage-1 {
-        position: relative;
-        grid-area: "hero";
-        background: $bg-green;
-        overflow: hidden;
-        height: 100vh;
-        
-        .cover {
-            width: 100%;
-            height: 100vh;
-            clip-path: circle(47.4% at 100% 14%);
-            opacity:0.5;
-            position: absolute;
-            background-color: $bg-greeb-b;
-            @media only screen and (min-width:768px){
-                clip-path: circle(65% at 100% 14%);
-            }
-            @media only screen and ( min-width:992px){
-                clip-path: circle(82% at 100% 14%);
-            }
-        }
-
-        .hero {
-            z-index: 1000;
-            position: relative;
+    .landpage-3 {
+        background-color: $bg-green;
+        .grid-gallery {
+            padding: 0 2rem;
             display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 10px;
-            justify-items: center;
-            text-align: center;
-            grid-template-rows: 1fr 2fr;
-
-            @media only screen and (min-width:992px){
-                grid-template-columns: 1fr 2fr;
-            }
-
-            @media only screen and (min-width:1024px) {
-                text-align: left;
-            }
-            main {
-
-                align-self: center;
-                @media only screen and (min-width:768px){
-                    align-self: flex-start;
-                    transform:translateY(15%);
-                }
-                @media only screen and ( min-width:992px) {
-                    transform: translateX( 45%) translateY(60%); 
-                }
-
-                h1 {
-                    font-size:2rem;
-                    padding: 0 1rem;
-                    @media only screen and (min-width:1024px){
-                        padding: 0;
-                    }
-                }
-    
-                p {
-                    padding: 0 4rem;
-                    @media only screen and (min-width:1024px){
-                        padding: 0;
-                    }
-                }
-    
-                button {
-                    @include btn(70%);
-                    transition: background 0.5s;
-                    a {
-                        @include reset-link($ligth);
-                        font-family: $text;
-                    }
-
-                    &:hover {
-                        background: $primary-hover;
-                        cursor:pointer;
-                    }
-                }
-            }
-            
-            div {
-                img {
-                    z-index:1000;
-                    @media only screen and (min-width:768px){
-                        transform: translateY(-20%);
-                    }
-                    @media only screen and (min-width:992px){
-                        transform: rotateZ(10deg);
-                    }
-                    @media only screen and (min-width: 1024px){
-                        transform: translateX(-5%) rotateZ(10deg) ;
-                    }                    
-                }
-
-            }
+            grid-gap:20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 200px;
         }
     }
+   
+    
 }
 
 

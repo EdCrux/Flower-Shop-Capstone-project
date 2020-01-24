@@ -12,8 +12,9 @@
 </head>
 <body>
     <!--Landing page-->
-    <div class="main-wrapper d-grid">
-        <div class="landpage-1">
+    <main class="main-wrapper d-grid">
+        <section class="landpage-1">
+            <h1 class="hidden">Musical Instruments made by the best brands over the world</h1>
             <div class="cover"></div>    
             <header class="nav">
                 <nav class="navbar">
@@ -21,7 +22,7 @@
                         <img class="img-res" src="./images/logov2.svg" alt="logo">
                     </div>
                     <ul>
-                        <li class="d-none"><a href="#galery">Gallery</a></li>
+                        <li class="d-none"><a href="#gallery">Gallery</a></li>
                         <li class="d-none"><a href="./views/filter.html">Products</a></li>
                         <li class="d-none"><a href="./view/contact.html">Contact</a></li>
                         <li class="round-box toggle"><i class="fas fa-bars"></i></li>
@@ -49,8 +50,107 @@
                     <img class ="img-res" src="https://purepng.com/public/uploads/large/african-drum-atn.png" alt="">
                 </div>
             </div>
+        </section>
+        <section class="landpage-2">
+            <h1 class="hidden">Hot offers</h1>
+            <div class="offers-grid">
+                <header class="header-offers">
+                    <h3 class="title black">
+                        Irresistible offers
+                    </h3>
+                    <div class="arrows">
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-angle-right"></i>
+                    </div>
+                </header>
+
+                <main class="card">
+                    <header class="header-product">
+                        <div>
+                            <a class="text black" href="./views/filter.html">
+                                Vocals Mic
+                            </a>
+                            <div class="card-price">
+                                <p class="text">
+                                    $120USD
+                                </p>
+                                <i class="fas fa-shopping-cart primary"></i>
+                            </div>
+                        </div>
+                        <div class="round-box discount text">
+                            -50%
+                        </div>
+                    </header>
+                    <div class="card-img">
+                        <img class="img-res"src="https://purepng.com/public/uploads/large/purepng.com-drums-kitdrummusicinstrumentsmetallicdrums-kit-1421526504331owmqh.png" alt="Acoustic Drums">
+                    </div>
+                </main>
+                <aside class="aside">
+                    <header class="header-product">
+                        <div>
+                            <a class="text black" href="./views/filter.html">
+                                Acoustic Guitar
+                            </a>
+                            <div class="card-price">
+                                <p class="text">
+                                    $99 USD
+                                </p>
+                                <i class="fas fa-shopping-cart primary"></i>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="card-img ">
+                        <img class="img-res"src="https://purepng.com/public/uploads/large/purepng.com-acoustic-classic-guitarguitarmusicalinstrumentstringacoustic-guitarelectrical-14215265370738ve3d.png" alt="Guitar">
+                    </div>
+                </aside>
+                <aside class="aside2">
+                    <header class="header-product">
+                        <div>
+                            <a class="text black" href="./views/filter.html">
+                                African Drum
+                            </a>
+                            <div class="card-price">
+                                <p class="text">
+                                    $200USD
+                                </p>
+                                <i class="fas fa-shopping-cart primary"></i>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="card-img">
+                        <img class="img-res"src="https://purepng.com/public/uploads/large/china-eay.png" alt="ChinaDrum">
+                    </div>
+                </aside>
             </div>
-    </div>
+        </section>
+
+        <section id="gallery" class="landpage-3">
+            <h1 class="hidden">Gallery</h1>
+            <header class="header-offers">
+                <h3 class="title black">
+                    Gallery
+                </h3>
+                <div class="arrows">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-right"></i>
+                </div>
+            </header>
+            <div class="grid-gallery">
+                <div class="gallery-item">
+                    <img class="img-res" src="https://source.unsplash.com/1600x900/?music,african,drums" alt="Drums">
+                </div>
+                <div class="gallery-item">
+                    <img class="img-res" src="https://source.unsplash.com/1600x900/?music,bass,fender" alt="BassGuitar">
+                </div>
+                <div class="gallery-item">
+                    <img class="img-res" src="https://source.unsplash.com/1600x900/?music,acoustic,guitar,boss" alt="Guitar">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    
     <script src="https://kit.fontawesome.com/859eff7750.js"></script>
 </body>
 </html>
