@@ -553,20 +553,85 @@ html {
   max-width: 1310px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "hero" "offers" "galery" "catalog" "comments" "map";
+      grid-template-areas: "hero" "offers" "gallery" "catalog" "comments" "map";
 }
 
 .main-wrapper .landpage-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: gallery;
   background-color: #62C312;
 }
 
 .main-wrapper .landpage-3 .grid-gallery {
+  width: 83%;
+  margin: 0 auto;
   padding: 0 2rem;
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: 200px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-wrapper .landpage-3 .grid-gallery {
+    -ms-grid-columns: 2.5fr 2fr 1.5fr;
+        grid-template-columns: 2.5fr 2fr 1.5fr;
+    -ms-grid-rows: 50px 1fr 50px;
+        grid-template-rows: 50px 1fr 50px;
+  }
+}
+
+.main-wrapper .landpage-3 .grid-gallery .header-gallery {
+  grid-column: 1/-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-wrapper .landpage-3 .grid-gallery .header-gallery h3 {
+  color: #fcfcfc;
+  font-weight: 100;
+}
+
+.main-wrapper .landpage-3 .grid-gallery .header-gallery .arrows {
+  color: #fcfcfc;
+}
+
+.main-wrapper .landpage-3 .grid-gallery .header-gallery .arrows .fa-angle-right {
+  margin-left: 1em;
+}
+
+.main-wrapper .landpage-3 .grid-gallery .gallery-item img {
+  border-radius: 8px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-wrapper .landpage-3 .grid-gallery .slideshow-dots {
+  height: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  padding: 0 1rem;
+}
+
+.main-wrapper .landpage-3 .grid-gallery .slideshow-dots .dots {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #FCFCFC50;
+}
+
+.main-wrapper .landpage-3 .grid-gallery .slideshow-dots .active {
+  background: #fcfcfc;
 }
 /*# sourceMappingURL=style.css.map */
