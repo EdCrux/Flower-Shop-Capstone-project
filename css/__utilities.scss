@@ -115,6 +115,13 @@ $small-text:13px;
     border: none;
     background-color: transparent;
 }
+
+.bigger-img {
+    object-fit: cover;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
 /* General styles for only desktop */
 
 @media only screen and (max-width:1023px) {
