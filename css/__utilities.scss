@@ -57,6 +57,17 @@ $small-text:13px;
     box-shadow: 0px 5px 16px -8px rgba(0,0,0,0.75);
 }
 
+@mixin btnActive {
+    width:50px;
+    border-radius: 20px;
+    text-align: center;
+    border: 0.5px solid $bg-green;
+    background-color: $ligth;
+    padding: 5px;
+    font-size: 13px;
+    font-family: $text;
+}
+
 /* Some general clases to apply directly on html */
 
 .title {
@@ -95,6 +106,15 @@ $small-text:13px;
     display:inline-block;
 }
 
+.btnActive {
+    @include btnActive();
+}
+
+.btnBlank {
+    font-family: $text;
+    border: none;
+    background-color: transparent;
+}
 /* General styles for only desktop */
 
 @media only screen and (max-width:1023px) {

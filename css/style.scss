@@ -22,11 +22,11 @@ html {
     .landpage-3 {
         grid-area:gallery;
         background-color: $bg-green;
+        padding: 1rem 0;
         
         .grid-gallery {
             width:83%;
             margin: 0 auto;
-            padding: 0 2rem;
             display: grid;
             grid-gap:20px;
             grid-template-rows: 1fr;
@@ -34,6 +34,7 @@ html {
             @media only screen and (min-width:768px){
                 grid-template-columns: 2.5fr 2fr 1.5fr;
                 grid-template-rows: 50px 1fr 50px;
+                padding: 0 2rem;
             }
             .header-gallery {
                 grid-column: 1/-1;
@@ -55,20 +56,18 @@ html {
 
             }
             
-            .gallery-item{
+            .gallery-item {
 
                 img {
                     border-radius: 8px;
                     height: 100%;
                     object-fit: cover;
                 }
-                    
-                
             }
 
             .slideshow-dots  {
                 height: 20px;
-                grid-column: 1 / 2;
+                grid-column: 1 / 2; 
                 padding:0 1rem; 
                 
                 .dots {
@@ -82,9 +81,91 @@ html {
                     background: $ligth;
                 }
             }
-    }
+        }
    
-}
+    }
+
+    .landpage-4 {
+
+        .grid-catalog {
+            width:83%;
+            margin: 0 auto;
+            display: grid;
+            grid-gap:20px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px 1fr;
+            padding: 1rem;
+            @media only screen and(min-width:768px){
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .header-catalog {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                grid-column: 1 / -1;
+
+                h3 {
+                    font-weight: 100;
+                }
+    
+                .arrows {
+                    color:#06060650;
+                    .fa-angle-right {
+                        margin-left: 1em;
+                    }
+                }
+            }
+
+            .fa-heart {
+                color:$primary;
+                margin-bottom: 1em;
+            }
+
+            .card-product {
+                border: 1px solid rgba(233, 233, 233, 0.753);
+                border-radius: 8px;
+                padding: 25px;
+    
+                a {
+                    @include reset-link($dark);
+                    font-weight: bold;
+                }
+
+                .bigger-img {
+                    object-fit: cover;
+                    width: 70%;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                .info-card {
+                    margin-top: 27px;
+                }
+
+                .card-price {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    margin-top: 5px;
+    
+                    p {
+                        line-height: 0;
+                    }
+                }
+
+                .accesories {
+                    margin-top: 5px;
+                }
+                
+            }
+        }
+
+        
+        
+    }
+
+
 }
 
 
