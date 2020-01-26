@@ -402,12 +402,12 @@
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-      grid-template-areas: "header" "left"  "right" "bottom";
+      grid-template-areas: "header" "left"  "right" "bottom";
 }
 
 @media only screen and (min-width: 768px) {
   .landpage-2 .offers-grid {
-        grid-template-areas: "header header header" "left   left   right" "left   left   bottom";
+        grid-template-areas: "header header header" "left   left   right" "left   left   bottom";
     -ms-grid-rows: 50px 200px 200px;
         grid-template-rows: 50px 200px 200px;
   }
@@ -763,7 +763,12 @@ html {
   max-width: 1310px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "hero" "offers" "gallery" "catalog" "comments" "map";
+      grid-template-areas: "hero" "offers" "gallery" "catalog" "comments" "map";
+  height: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  padding: 0 1rem;
 }
 
 .main-wrapper .landpage-5 {
@@ -786,10 +791,10 @@ html {
 
 @media only screen and (min-width: 768px) {
   .main-wrapper .landpage-5 .grid-comments {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 50px 1fr 50px;
-        grid-template-rows: 50px 1fr 50px;
+    -ms-grid-columns: (minmax(360px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    -ms-grid-rows: (minmax(50px, 1fr))[auto-fit];
+        grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
     padding: 0 2rem;
   }
 }
@@ -812,15 +817,15 @@ html {
   font-weight: 100;
 }
 
-.main-wrapper .landpage-5 .grid-comments .header-comments .arrows {
+.main-wrapper .landpage-5 .grid-comments .arrows {
   color: #fcfcfc;
 }
 
-.main-wrapper .landpage-5 .grid-comments .header-comments .arrows .fa-angle-right {
+.main-wrapper .landpage-5 .grid-comments .arrows .fa-angle-right {
   margin-left: 1em;
 }
 
-.main-wrapper .landpage-5 .grid-comments .comment-item {
+.main-wrapper .landpage-5 .comment-item {
   background-color: #fcfcfc;
   border-radius: 8px;
   display: -webkit-box;
@@ -838,7 +843,7 @@ html {
           flex-direction: column;
 }
 
-.main-wrapper .landpage-5 .grid-comments .comment-item .avatar-wrapper {
+.main-wrapper .landpage-5 .comment-item .avatar-wrapper {
   -ms-flex-item-align: center;
       align-self: center;
   display: -webkit-box;
@@ -852,13 +857,13 @@ html {
           align-items: center;
 }
 
-.main-wrapper .landpage-5 .grid-comments .comment-item .avatar-wrapper .avatar {
+.main-wrapper .landpage-5 .comment-item .avatar-wrapper .avatar {
   overflow: hidden;
   -webkit-clip-path: circle(40% at 50% 50%);
           clip-path: circle(40% at 50% 50%);
 }
 
-.main-wrapper .landpage-5 .grid-comments .comment-item .avatar-wrapper .avatar img {
+.main-wrapper .landpage-5 .comment-item .avatar-wrapper .avatar img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -867,42 +872,34 @@ html {
   height: 8vw;
 }
 
-.main-wrapper .landpage-5 .grid-comments .comment-item .avatar-wrapper .avatar-description p {
+.main-wrapper .landpage-5 .comment-item .avatar-wrapper .avatar-description p {
   line-height: 0.5;
 }
 
-.main-wrapper .landpage-5 .grid-comments .comment-item .avatar-wrapper .avatar-description .fab {
+.main-wrapper .landpage-5 .comment-item .avatar-wrapper .avatar-description .fab {
   color: #62C312;
 }
 
-.main-wrapper .landpage-5 .grid-comments .comment-item .comments {
+.main-wrapper .landpage-5 .comment-item .comments {
   width: 75%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.main-wrapper .landpage-5 .grid-comments .comment-item .comments p {
+.main-wrapper .landpage-5 .comment-item .comments p {
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
-.main-wrapper .landpage-5 .grid-comments .slideshow-dots {
-  height: 20px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  padding: 0 1rem;
-}
-
-.main-wrapper .landpage-5 .grid-comments .slideshow-dots .dots {
+.main-wrapper .dots {
   display: inline-block;
   width: 12px;
   height: 12px;
   background-color: #FCFCFC50;
 }
 
-.main-wrapper .landpage-5 .grid-comments .slideshow-dots .active {
+.main-wrapper .active {
   background: #fcfcfc;
 }
 /*# sourceMappingURL=style.css.map */

@@ -68,6 +68,34 @@ $small-text:13px;
     font-family: $text;
 }
 
+@mixin header-section($color){
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        color:$color;
+        font-weight: 100;
+    }
+}
+
+@mixin slideshow-dots()  {
+    height: 20px;
+    grid-column: 1 / 2; 
+    padding:0 1rem; 
+    
+    .dots {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-color:#FCFCFC50;
+    }
+
+    .active {
+        background: $ligth;
+    }
+}
+
 /* Some general clases to apply directly on html */
 
 .title {
@@ -122,6 +150,8 @@ $small-text:13px;
     display: block;
     margin: 0 auto;
 }
+
+
 /* General styles for only desktop */
 
 @media only screen and (max-width:1023px) {

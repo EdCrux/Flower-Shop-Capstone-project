@@ -22,12 +22,10 @@ html {
          "comments"
          "map";
     
-
          .landpage-5 {
             grid-area:comments;
             background-color: $bg-green;
             padding: 1rem 0;
-            
             .grid-comments {
                 width:83%;
                 margin: 0 auto;
@@ -36,37 +34,25 @@ html {
                 grid-template-rows: 1fr;
         
                 @media only screen and (min-width:768px){
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 50px 1fr 50px;
+                    grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
+                    grid-template-rows: repeat(auto-fit, minmax(50px,1fr));
                     padding: 0 2rem;
                 }
                 .header-comments {
-                    grid-column: 1/-1;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    h3 {
-                        color:$ligth;
-                        font-weight: 100;
+                    @include header-section($ligth);
                     }
-        
                     .arrows {
                         color:$ligth;
                         .fa-angle-right {
                             margin-left: 1em;
                         }
                     }
-        
-        
                 }
                 
                 .comment-item {
                     background-color: $ligth;
                     border-radius: 8px;
                     @include d-flex(column);
-                    
-                    
-
                     .avatar-wrapper {
                         align-self: center;
                         display: flex;
@@ -82,10 +68,7 @@ html {
                                 width:8vw;
                                 height: 8vw;
                             }
-
-                            
                         }
-    
                         .avatar-description {
                             p {
                                 line-height: 0.5;
@@ -96,7 +79,6 @@ html {
                             }
                         }
                     }
-
                     .comments {
                         width: 75%;
                         align-self: center;
@@ -107,28 +89,15 @@ html {
                     }
 
                 }
-        
-                .slideshow-dots  {
-                    height: 20px;
-                    grid-column: 1 / 2; 
-                    padding:0 1rem; 
-                    
-                    .dots {
-                        display: inline-block;
-                        width: 12px;
-                        height: 12px;
-                        background-color:#FCFCFC50;
-                    }
-        
-                    .active {
-                        background: $ligth;
-                    }
-                }
+                
+            
             }
-        
+            @include slideshow-dots();
+
+            
         }
+    
 
 
-}
 
 
