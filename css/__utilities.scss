@@ -160,6 +160,8 @@ $small-text:13px;
     display:inline-block;
 }
 
+
+
 .btnActive {
     @include btnActive();
 }
@@ -175,6 +177,10 @@ $small-text:13px;
     width: 70%;
     display: block;
     margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 

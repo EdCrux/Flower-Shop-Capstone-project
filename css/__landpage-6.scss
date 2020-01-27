@@ -7,21 +7,6 @@
         flex-direction: column;
         .map {
 
-            .bussines-card {
-                background-color: $primary;
-                border-radius: 10px;
-                width: 200px;
-                height: 150px;
-                
-                clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-                .bfill{
-                    
-                clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-                    width: 198px;
-                    height: 148px;
-                    background-color: $ligth;
-                }
-            }
             iframe {
                 width: 100%;
                 height: 560px;
