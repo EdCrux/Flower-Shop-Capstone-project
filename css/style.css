@@ -194,6 +194,10 @@
   font-size: 1vw;
 }
 
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
 .navbar ul li i {
   color: #fcfcfc;
 }
@@ -254,8 +258,8 @@
 .landpage-1 .cover {
   width: 100%;
   height: 100vh;
-  -webkit-clip-path: circle(47.4% at 100% 14%);
-          clip-path: circle(47.4% at 100% 14%);
+  -webkit-clip-path: circle(100% at 189% 26%);
+          clip-path: circle(100% at 189% 26%);
   opacity: 0.5;
   position: absolute;
   background-color: #87D249;
@@ -263,15 +267,15 @@
 
 @media only screen and (min-width: 768px) {
   .landpage-1 .cover {
-    -webkit-clip-path: circle(65% at 100% 14%);
-            clip-path: circle(65% at 100% 14%);
+    -webkit-clip-path: circle(60% at 105% 45%);
+            clip-path: circle(60% at 105% 45%);
   }
 }
 
 @media only screen and (min-width: 992px) {
   .landpage-1 .cover {
-    -webkit-clip-path: circle(82% at 100% 14%);
-            clip-path: circle(82% at 100% 14%);
+    -webkit-clip-path: circle(55% at 79% 13%);
+            clip-path: circle(55% at 79% 13%);
   }
 }
 
@@ -364,6 +368,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.landpage-1 .hero main button a:hover {
+  text-decoration: underline;
+}
+
 .landpage-1 .hero main button:hover {
   background: #8b093d;
   cursor: pointer;
@@ -402,12 +410,12 @@
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-      grid-template-areas: "header" "left"  "right" "bottom";
+      grid-template-areas: "header" "left"  "right" "bottom";
 }
 
 @media only screen and (min-width: 768px) {
   .landpage-2 .offers-grid {
-        grid-template-areas: "header header header" "left   left   right" "left   left   bottom";
+        grid-template-areas: "header header header" "left   left   right" "left   left   bottom";
     -ms-grid-rows: 50px 200px 200px;
         grid-template-rows: 50px 200px 200px;
   }
@@ -469,6 +477,10 @@
   text-decoration: none;
   color: #202020;
   font-weight: bold;
+}
+
+.landpage-2 .offers-grid .card .header-product a:hover, .landpage-2 .offers-grid .aside .header-product a:hover, .landpage-2 .offers-grid .aside2 .header-product a:hover {
+  text-decoration: underline;
 }
 
 .landpage-2 .offers-grid .card .header-product .card-price, .landpage-2 .offers-grid .aside .header-product .card-price, .landpage-2 .offers-grid .aside2 .header-product .card-price {
@@ -574,10 +586,39 @@
   -ms-grid-column: 1;
   grid-area: gallery;
   background-color: #62C312;
-  padding: 1rem 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.landpage-3 .cover {
+  width: 100%;
+  height: 100vh;
+  min-height: 550px;
+  -webkit-clip-path: circle(60% at 105% 45%);
+          clip-path: circle(60% at 105% 45%);
+  opacity: 0.5;
+  position: absolute;
+  background-color: #87D249;
+}
+
+@media only screen and (min-width: 768px) {
+  .landpage-3 .cover {
+    -webkit-clip-path: circle(65% at 100% 14%);
+            clip-path: circle(65% at 100% 14%);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .landpage-3 .cover {
+    -webkit-clip-path: circle(38% at 70% 22%);
+            clip-path: circle(38% at 70% 22%);
+  }
 }
 
 .landpage-3 .grid-gallery {
+  position: relative;
+  z-index: 1000;
   width: 83%;
   margin: 0 auto;
   display: -ms-grid;
@@ -728,6 +769,10 @@
   font-weight: bold;
 }
 
+.landpage-4 .grid-catalog .card-product a:hover {
+  text-decoration: underline;
+}
+
 .landpage-4 .grid-catalog .card-product .info-card {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -754,32 +799,44 @@
   margin-top: 5px;
 }
 
-html {
-  font-size: 16px;
-}
-
-.main-wrapper {
-  margin: 0 auto;
-  max-width: 1310px;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "hero" "offers" "gallery" "catalog" "comments" "map";
-  height: 20px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  padding: 0 1rem;
-}
-
-.main-wrapper .landpage-5 {
+.landpage-5 {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: comments;
   background-color: #62C312;
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
+  overflow: hidden;
+  position: relative;
 }
 
-.main-wrapper .landpage-5 .grid-comments {
+.landpage-5 .cover {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  -webkit-clip-path: circle(60% at 105% 45%);
+          clip-path: circle(60% at 105% 45%);
+  opacity: 0.5;
+  position: absolute;
+  background-color: #87D249;
+}
+
+@media only screen and (min-width: 768px) {
+  .landpage-5 .cover {
+    -webkit-clip-path: circle(65% at 100% 14%);
+            clip-path: circle(65% at 100% 14%);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .landpage-5 .cover {
+    -webkit-clip-path: circle(38% at 70% 22%);
+            clip-path: circle(38% at 70% 22%);
+  }
+}
+
+.landpage-5 .grid-comments {
+  position: relative;
+  z-index: 1000;
   width: 83%;
   margin: 0 auto;
   display: -ms-grid;
@@ -790,7 +847,7 @@ html {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-wrapper .landpage-5 .grid-comments {
+  .landpage-5 .grid-comments {
     -ms-grid-columns: (minmax(360px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     -ms-grid-rows: (minmax(50px, 1fr))[auto-fit];
@@ -799,7 +856,7 @@ html {
   }
 }
 
-.main-wrapper .landpage-5 .grid-comments .header-comments {
+.landpage-5 .grid-comments .header-comments {
   grid-column: 1/-1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,20 +869,20 @@ html {
           align-items: center;
 }
 
-.main-wrapper .landpage-5 .grid-comments .header-comments h3 {
+.landpage-5 .grid-comments .header-comments h3 {
   color: #fcfcfc;
   font-weight: 100;
 }
 
-.main-wrapper .landpage-5 .grid-comments .arrows {
+.landpage-5 .grid-comments .header-comments .arrows {
   color: #fcfcfc;
 }
 
-.main-wrapper .landpage-5 .grid-comments .arrows .fa-angle-right {
+.landpage-5 .grid-comments .header-comments .arrows .fa-angle-right {
   margin-left: 1em;
 }
 
-.main-wrapper .landpage-5 .comment-item {
+.landpage-5 .grid-comments .comment-item {
   background-color: #fcfcfc;
   border-radius: 8px;
   display: -webkit-box;
@@ -843,7 +900,7 @@ html {
           flex-direction: column;
 }
 
-.main-wrapper .landpage-5 .comment-item .avatar-wrapper {
+.landpage-5 .grid-comments .comment-item .avatar-wrapper {
   -ms-flex-item-align: center;
       align-self: center;
   display: -webkit-box;
@@ -857,49 +914,221 @@ html {
           align-items: center;
 }
 
-.main-wrapper .landpage-5 .comment-item .avatar-wrapper .avatar {
+.landpage-5 .grid-comments .comment-item .avatar-wrapper .avatar {
   overflow: hidden;
   -webkit-clip-path: circle(40% at 50% 50%);
           clip-path: circle(40% at 50% 50%);
 }
 
-.main-wrapper .landpage-5 .comment-item .avatar-wrapper .avatar img {
+.landpage-5 .grid-comments .comment-item .avatar-wrapper .avatar img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  width: 8vw;
-  height: 8vw;
+  width: 72px;
+  height: 72px;
 }
 
-.main-wrapper .landpage-5 .comment-item .avatar-wrapper .avatar-description p {
+.landpage-5 .grid-comments .comment-item .avatar-wrapper .avatar-description p {
   line-height: 0.5;
 }
 
-.main-wrapper .landpage-5 .comment-item .avatar-wrapper .avatar-description .fab {
+.landpage-5 .grid-comments .comment-item .avatar-wrapper .avatar-description .fab {
   color: #62C312;
 }
 
-.main-wrapper .landpage-5 .comment-item .comments {
+.landpage-5 .grid-comments .comment-item .comments {
   width: 75%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.main-wrapper .landpage-5 .comment-item .comments p {
+.landpage-5 .grid-comments .comment-item .comments p {
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
-.main-wrapper .dots {
+.landpage-5 .grid-comments .slideshow-dots {
+  height: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  padding: 0 1rem;
+}
+
+.landpage-5 .grid-comments .slideshow-dots .dots {
   display: inline-block;
   width: 12px;
   height: 12px;
   background-color: #FCFCFC50;
 }
 
-.main-wrapper .active {
+.landpage-5 .grid-comments .slideshow-dots .active {
   background: #fcfcfc;
+}
+
+.landpage-6 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.landpage-6 .grid-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landpage-6 .grid-footer .map .bussines-card {
+  background-color: #D8055A;
+  border-radius: 10px;
+  width: 200px;
+  height: 150px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.landpage-6 .grid-footer .map .bussines-card .bfill {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  width: 198px;
+  height: 148px;
+  background-color: #fcfcfc;
+}
+
+.landpage-6 .grid-footer .map iframe {
+  width: 100%;
+  height: 560px;
+  border: none;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.landpage-6 .grid-footer .footer-contact {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 83%;
+  margin: 0 auto;
+  padding: 1rem;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media only screen and (min-width: 768px) {
+  .landpage-6 .grid-footer .footer-contact {
+    padding: 0;
+    -ms-grid-columns: 2fr 1fr 1fr 2fr;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+    -ms-grid-rows: 135px;
+        grid-template-rows: 135px;
+  }
+}
+
+.landpage-6 .grid-footer .footer-contact .cta-subscribe {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 40px;
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: #D8055A;
+  border: none;
+  -webkit-box-shadow: 0px 5px 16px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 5px 16px -8px rgba(0, 0, 0, 0.75);
+  background: #62C312;
+  color: #fcfcfc;
+  padding: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 0.9s;
+  transition: background 0.9s;
+}
+
+.landpage-6 .grid-footer .footer-contact .cta-subscribe:hover {
+  cursor: pointer;
+  background-color: #4c9213;
+}
+
+.landpage-6 .grid-footer .footer-contact .cta-subscribe a {
+  text-decoration: none;
+  color: #fcfcfc;
+  font-size: 0.8rem;
+}
+
+.landpage-6 .grid-footer .footer-contact .cta-subscribe a:hover {
+  text-decoration: underline;
+}
+
+.landpage-6 .grid-footer .footer-contact .address-mail {
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.landpage-6 .grid-footer .footer-contact .contact-links a {
+  color: #202020;
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 2;
+  display: block;
+}
+
+.landpage-6 .grid-footer .footer-contact .wrapper-copy {
+  text-align: left;
+}
+
+.landpage-6 .grid-footer .footer-contact .wrapper-copy p {
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.landpage-6 .grid-footer .footer-contact .wrapper-copy .pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.landpage-6 .grid-footer .footer-contact .wrapper-copy .pay img {
+  height: 30px;
+}
+
+.landpage-6 .grid-footer .footer-contact .wrapper-copy .pay img::last-child {
+  height: 60px;
+}
+
+html {
+  font-size: 16px;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  max-width: 1310px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "hero" "offers" "gallery" "catalog" "comments" "footer";
 }
 /*# sourceMappingURL=style.css.map */

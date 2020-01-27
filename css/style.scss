@@ -1,10 +1,12 @@
 @import './_utilities';
 @import './_header';
-
 @import './_landpage-1';
 @import './_landpage-2';
 @import './_landpage-3';
 @import './_landpage-4';
+@import './_landpage-5';
+@import './_landpage-6';
+
 
 html {
     font-size: 16px;
@@ -20,83 +22,9 @@ html {
          "gallery"
          "catalog"
          "comments"
-         "map";
-    
-         .landpage-5 {
-            grid-area:comments;
-            background-color: $bg-green;
-            padding: 1rem 0;
-            .grid-comments {
-                width:83%;
-                margin: 0 auto;
-                display: grid;
-                grid-gap:20px;
-                grid-template-rows: 1fr;
-        
-                @media only screen and (min-width:768px){
-                    grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
-                    grid-template-rows: repeat(auto-fit, minmax(50px,1fr));
-                    padding: 0 2rem;
-                }
-                .header-comments {
-                    @include header-section($ligth);
-                    }
-                    .arrows {
-                        color:$ligth;
-                        .fa-angle-right {
-                            margin-left: 1em;
-                        }
-                    }
-                }
-                
-                .comment-item {
-                    background-color: $ligth;
-                    border-radius: 8px;
-                    @include d-flex(column);
-                    .avatar-wrapper {
-                        align-self: center;
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        
-                        .avatar {
-                            overflow: hidden;
-                            clip-path: circle(40% at 50% 50%);
-                            img {
-                                object-fit: cover;
-                                object-position: center;
-                                width:8vw;
-                                height: 8vw;
-                            }
-                        }
-                        .avatar-description {
-                            p {
-                                line-height: 0.5;
-                            }
-    
-                            .fab {
-                                color:$bg-green;
-                            }
-                        }
-                    }
-                    .comments {
-                        width: 75%;
-                        align-self: center;
-                        p {
-                            font-size: 0.9rem;
-                            line-height: 1.5;
-                        }
-                    }
-
-                }
-                
-            
-            }
-            @include slideshow-dots();
-
-            
-        }
-    
+         "footer";
+   }
+   
 
 
 

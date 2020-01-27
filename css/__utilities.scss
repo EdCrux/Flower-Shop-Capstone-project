@@ -22,6 +22,9 @@ $small-text:13px;
 @mixin reset-link ($color){
     text-decoration: none;
     color: $color;
+    &:hover {
+        text-decoration:underline;
+    }
 }
 
 @mixin d-flex($direction) {
@@ -68,6 +71,20 @@ $small-text:13px;
     font-family: $text;
 }
 
+@mixin general-grid-mobile($row){
+    width:83%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap:20px;
+    grid-template-rows: $row;
+}
+
+@mixin general-grid-desktop($min-col, $min-row) {
+    grid-template-columns: repeat(auto-fit, minmax($min-col,1fr));
+    grid-template-rows: repeat(auto-fit, minmax($min-row,1fr));
+    padding: 0 2rem;
+};
+
 @mixin header-section($color){
     grid-column: 1/-1;
     display: flex;
@@ -76,6 +93,13 @@ $small-text:13px;
     h3 {
         color:$color;
         font-weight: 100;
+    }
+}
+
+@mixin arrows($color) {
+    color:$color;
+    .fa-angle-right {
+        margin-left: 1em;
     }
 }
 
@@ -95,6 +119,8 @@ $small-text:13px;
         background: $ligth;
     }
 }
+
+
 
 /* Some general clases to apply directly on html */
 
