@@ -23,19 +23,23 @@
         position: relative;
         z-index: 1000;
         @include general-grid-mobile(1fr);
+        
         @media only screen and (min-width:768px){
             @include general-grid-desktop(360px,50px);
         }
 
         .header-comments {
             @include header-section($ligth);
-        
+            
             .arrows {
                 @include arrows($ligth);
             }
         }
         
         .comment-item {
+            justify-self: center;
+            width: 90%;
+            height: 270px;
             background-color: $ligth;
             border-radius: 8px;
             @include d-flex(column);
@@ -57,6 +61,7 @@
                 }
                 .avatar-description {
                     p {
+                        font-size:0.8rem;
                         line-height: 0.5;
                     }
 

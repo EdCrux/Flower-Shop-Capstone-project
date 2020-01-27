@@ -6,7 +6,35 @@
         display: flex;
         flex-direction: column;
         .map {
+            position: relative;
+            .location {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 200px;
+                z-index:1000;
+                padding:1rem;
+                position: absolute;
+                transform:translate(10%,50%);
+                @media only screen and(min-width:992px){
+                transform:translate(180%,50%);
+                }
+                background-image:url("/images/location.png");
+                background-repeat: no-repeat;
+                width: 285px;
+                height: 200px;
+                overflow: hidden;
+                img {
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
 
+                .pointer-address {
+                    padding: 1rem;
+                    span {
+                        color:#DE3075;
+                    }
+                }
+            }
             iframe {
                 width: 100%;
                 height: 560px;

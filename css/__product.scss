@@ -5,7 +5,7 @@
        display: grid;
        grid-gap:20px;
        grid-template-columns: 1fr;
-       grid-template-rows: repeat(auto-fit, minmax(350px,1fr));
+       grid-template-rows: repeat(auto-fit, minmax(500px,1fr));
        justify-items: center;
        align-items: center;
        padding: 1rem;
@@ -212,7 +212,9 @@
            padding: 25px;
            @include d-flex(column);
            justify-content: space-around;
-
+           .fa-heart {
+               color:$primary;
+           }
            a {
                @include reset-link($dark);
                font-weight: bold;

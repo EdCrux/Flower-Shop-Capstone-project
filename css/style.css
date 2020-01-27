@@ -887,6 +887,9 @@
 }
 
 .landpage-5 .grid-comments .comment-item {
+  justify-self: center;
+  width: 90%;
+  height: 270px;
   background-color: #fcfcfc;
   border-radius: 8px;
   display: -webkit-box;
@@ -934,6 +937,7 @@
 }
 
 .landpage-5 .grid-comments .comment-item .avatar-wrapper .avatar-description p {
+  font-size: 0.8rem;
   line-height: 0.5;
 }
 
@@ -986,6 +990,50 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.landpage-6 .grid-footer .map {
+  position: relative;
+}
+
+.landpage-6 .grid-footer .map .location {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 200px;
+      grid-template-rows: 200px;
+  z-index: 1000;
+  padding: 1rem;
+  position: absolute;
+  -webkit-transform: translate(10%, 50%);
+          transform: translate(10%, 50%);
+  background-image: url("/images/location.png");
+  background-repeat: no-repeat;
+  width: 285px;
+  height: 200px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+  .landpage-6 .grid-footer .map .location {
+    -webkit-transform: translate(180%, 50%);
+            transform: translate(180%, 50%);
+  }
+}
+
+.landpage-6 .grid-footer .map .location img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.landpage-6 .grid-footer .map .location .pointer-address {
+  padding: 1rem;
+}
+
+.landpage-6 .grid-footer .map .location .pointer-address span {
+  color: #DE3075;
 }
 
 .landpage-6 .grid-footer .map iframe {
@@ -1371,8 +1419,8 @@
   grid-gap: 20px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: (minmax(350px, 1fr))[auto-fit];
-      grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+  -ms-grid-rows: (minmax(500px, 1fr))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1674,6 +1722,10 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.product .grid-catalog-2 .card-product .fa-heart {
+  color: #D8055A;
 }
 
 .product .grid-catalog-2 .card-product a {
