@@ -1,18 +1,10 @@
 # Flower-Shop-Capstone-project
-Final project at microverse curriculum
 
----
-
-> This project is completed by Eduardo Cruz, as part of Microverse curriculum.  
-
---- 
-## Built With
-
-- HTML5
-- CSS3,
-- Coffe ☕
+<img src="/images/coverCapstone.jpg" width="100%">
 
 ## Live Demo
+
+<img src="/images/mockup.jpg" width="100%">
 
 [Live Demo Link](https://rawcdn.githack.com/EdCrux/Flower-Shop-Capstone-project/3a1638a02d5150ee1f386dc0d99efa2ec375d2ca/index.html)
 
