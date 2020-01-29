@@ -1,10 +1,15 @@
 <img src="/images/coverCapstone.jpg" width="100%">
 
+### Live demo
+
+Take a look for:
 [Live Demo](https://rawcdn.githack.com/EdCrux/Flower-Shop-Capstone-project/3a1638a02d5150ee1f386dc0d99efa2ec375d2ca/index.html) 
 
->The main objective of this project is to build a website. Based on a design project. You can check the reference clic on [here](https://www.behance.net/gallery/69329213/Flower-e-shop)
 
->Here is my result: 
+
+> Brief description
+
+The main objective of this project was to build a website based on a design project. You can check the design project [here](https://www.behance.net/gallery/69329213/Flower-e-shop) and see if it is similar. 
 
 
 <img src="/images/mockup.png" width="100%">
@@ -36,8 +41,9 @@
 
 ### Install
 
--`git clone` 
--`npm install`
+`git clone` 
+
+`npm install`
 
 ### Assets
 
@@ -46,7 +52,6 @@
 - Icons : [Fontawesome](https://fontawesome.com/icons?d=gallery&c=arrows,interfaces)
 
 ### Run tests
-
 
 Style lint
 ` npx stylelint css/style.css`
@@ -80,9 +85,8 @@ This project is [MIT](lic.url) licensed.
 
 ## 📝 Acknowledgements
 
-Design idea by [Michael D on Dribbble](https://dribbble.com/altezzik)
-
-[Behance](https://www.behance.net/gallery/69329213/Flower-e-shop)
+Design idea by  [Michael D on Dribbble](https://dribbble.com/altezzik)
+Behance profile [Behance](https://www.behance.net/gallery/69329213/Flower-e-shop)
 
 
 
