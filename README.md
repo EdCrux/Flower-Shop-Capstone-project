@@ -1,46 +1,61 @@
-# Flower-Shop-Capstone-project
-
 <img src="/images/coverCapstone.jpg" width="100%">
 
-## Live Demo
+[## Live Demo](https://rawcdn.githack.com/EdCrux/Flower-Shop-Capstone-project/3a1638a02d5150ee1f386dc0d99efa2ec375d2ca/index.html) 
 
 <img src="/images/mockup.png" width="100%">
 
-[Live Demo Link](https://rawcdn.githack.com/EdCrux/Flower-Shop-Capstone-project/3a1638a02d5150ee1f386dc0d99efa2ec375d2ca/index.html)
+--
 
-## Getting Started
+>## Built With
 
-**You can download the zip file, o take a look on the live demo**
+--
+
+### Stack 
+
+- HTML5
+- SASS
+- CSS
 
 ### Prerequisites
+
+- CLI
 - Web Browser with Flexbox compatibility
 - IDE (if you want to test)
 
+
 ### Dependencies
 
-- Browsersync
+- Live Sass compiler
+- Live Server
 - Stylelint
 
 ### Install
 
-`git clone` `npm install`
+`git clone` 
+`npm install`
 
-### Usage
+### Assets
+
+PNG images from : [PNG hunter](https://pnghunter.com/)
+The fonts used : [GoogleFonts](https://fonts.google.com/)
+Icons : [Fontawesome](https://fontawesome.com/icons?d=gallery&c=arrows,interfaces)
 
 ### Run tests
+
 Style lint
-` npx stylelint .`
+` npx stylelint css/style.css`
+
 ### Deployment
 
 `npm start`
-
-## AuthorsEdCrux
-
+--
+## Author
+--
 👤 **Eduardo Cruz**
 
 - Github: [EdCrux](https://github.com/EdCrux)
 - Twitter: [@Eduardo79973490](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](www.linkedin.com/in/edcrux)
+- Linkedin: [Linkedin](www.linkedin.com/in/edcrux)
 
 ## 🤝 Contributing
 
@@ -56,9 +71,13 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](lic.url) licensed.
 
-The [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-The design is made by: 
 
-[https://www.behance.net/gallery/69329213/Flower-e-shop](https://www.behance.net/gallery/69329213/Flower-e-shop)
+## 📝 Acknowledgements
 
 Design idea by [Michael D on Dribbble](https://dribbble.com/altezzik)
+
+[Behance](https://www.behance.net/gallery/69329213/Flower-e-shop)
+
+
+
+

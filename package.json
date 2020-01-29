@@ -1,0 +1,19 @@
+{
+  "name": "flower-shop-capstone-project",
+  "version": "1.0.0",
+  "description": "<img src=\"/images/coverCapstone.jpg\" width=\"100%\">",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdCrux/Flower-Shop-Capstone-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdCrux/Flower-Shop-Capstone-project/issues"
+  },
+  "homepage": "https://github.com/EdCrux/Flower-Shop-Capstone-project#readme"
+}
