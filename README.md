@@ -10,7 +10,7 @@ The main objective of this project was to build a website based on a design proj
 ### Live demo
 
 Take a look for:
-[Live Demo](https://rawcdn.githack.com/EdCrux/Flower-Shop-Capstone-project/3a1638a02d5150ee1f386dc0d99efa2ec375d2ca/index.html) 
+[Live Demo](https://rawcdn.githack.com/EdCrux/Music-shop-Capstone-HTML-CSS-project/a85a4bb9079268fca39463fdbec1b3a83a568d97/index.html) 
 
 <img src="/images/mockup.png" width="100%">
 
