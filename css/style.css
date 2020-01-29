@@ -1366,17 +1366,18 @@
 .landpage-6 .grid-footer .map .location {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 200px;
-      grid-template-rows: 200px;
+  -ms-grid-columns: 70px 1fr;
+      grid-template-columns: 70px 1fr;
+  -ms-grid-rows: 262px;
+      grid-template-rows: 262px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   z-index: 1000;
   padding: 1rem;
   position: absolute;
   -webkit-transform: translate(5%, 50%);
           transform: translate(5%, 50%);
-  background-image: url(images/locationboxflipped.png);
-  background-repeat: no-repeat;
   width: 285px;
   height: 200px;
   overflow: hidden;
@@ -1389,20 +1390,23 @@
   }
 }
 
-@media only screen and (min-width: 501px) {
-  .landpage-6 .grid-footer .map .location {
-    background-image: url(images/location.png);
-  }
+.landpage-6 .grid-footer .map .location .img-location {
+  position: absolute;
+  height: 170px;
+  width: 262px;
 }
 
 .landpage-6 .grid-footer .map .location img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  z-index: 10000;
 }
 
 .landpage-6 .grid-footer .map .location .pointer-address {
   padding: 1rem;
+  font-size: 0.8rem;
+  z-index: 10000;
 }
 
 .landpage-6 .grid-footer .map .location .pointer-address span {

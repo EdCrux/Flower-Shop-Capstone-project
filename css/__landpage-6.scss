@@ -8,8 +8,9 @@
       position: relative;
       .location {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px;
+        grid-template-columns: 70px 1fr;
+        grid-template-rows: 262px;
+        align-items: start;;
         z-index: 1000;
         padding: 1rem;
         position: absolute;
@@ -17,21 +18,27 @@
         @media only screen and(min-width:992px) {
           transform: translate(180%, 50%);
         }
-        background-image: url(images/locationboxflipped.png);
-        background-repeat: no-repeat;
+
         width: 285px;
         height: 200px;
         overflow: hidden;
-        @media only screen and(min-width:501px){
-          background-image: url(images/location.png);
+
+        .img-location {
+          position: absolute;
+          height: 170px;
+          width: 262px;
         }
+
         img {
           object-fit: cover;
           border-radius: 10px;
+          z-index: 10000;
         }
 
         .pointer-address {
           padding: 1rem;
+          font-size: 0.8rem;
+          z-index: 10000;
           span {
             color: #de3075;
           }
