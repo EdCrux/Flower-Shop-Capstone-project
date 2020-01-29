@@ -13,15 +13,18 @@
         z-index: 1000;
         padding: 1rem;
         position: absolute;
-        transform: translate(10%, 50%);
+        transform: translate(5%, 50%);
         @media only screen and(min-width:992px) {
           transform: translate(180%, 50%);
         }
-        background-image: url("images/location.png");
+        background-image: url(/images/locationboxflipped.png);
         background-repeat: no-repeat;
         width: 285px;
         height: 200px;
         overflow: hidden;
+        @media only screen and(min-width:501px){
+          background-image: url(/images/location.png);
+        }
         img {
           object-fit: cover;
           border-radius: 10px;

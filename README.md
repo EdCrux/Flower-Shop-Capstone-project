@@ -3,7 +3,7 @@
 
 ### Brief description
 
-The main objective of this project was to build a website based on a design project. You can check the design project [here](https://www.behance.net/gallery/69329213/Flower-e-shop) and see if it is similar. 
+The main objective of this project was to build a website based on a design project. You can check the design project [here](https://www.behance.net/gallery/69329213/Flower-e-shop) and watch if it is similar. 
 
 <img src="/images/coverCapstone.jpg" width="100%">
 

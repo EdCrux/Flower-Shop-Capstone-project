@@ -1373,9 +1373,9 @@
   z-index: 1000;
   padding: 1rem;
   position: absolute;
-  -webkit-transform: translate(10%, 50%);
-          transform: translate(10%, 50%);
-  background-image: url("images/location.png");
+  -webkit-transform: translate(5%, 50%);
+          transform: translate(5%, 50%);
+  background-image: url(/images/locationboxflipped.png);
   background-repeat: no-repeat;
   width: 285px;
   height: 200px;
@@ -1386,6 +1386,12 @@
   .landpage-6 .grid-footer .map .location {
     -webkit-transform: translate(180%, 50%);
             transform: translate(180%, 50%);
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .landpage-6 .grid-footer .map .location {
+    background-image: url(/images/location.png);
   }
 }
 
