@@ -580,7 +580,7 @@
   width: 170px;
   border-radius: 40px;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   background-color: #d8055a;
   border: none;
   -webkit-box-shadow: 0 5px 16px -8px rgba(0, 0, 0, 0.75);
@@ -1274,6 +1274,7 @@
   -ms-flex-align: center;
   align-items: center;
   grid-column: 1 / -1;
+  justify-content: space-between;
 }
 
 .landpage-4 .grid-catalog .header-catalog h3,
@@ -1591,7 +1592,7 @@
   width: 85%;
   border-radius: 40px;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 0.7rem 1rem;
   border: none;
   -webkit-box-shadow: 0 5px 16px -8px rgba(0, 0, 0, 0.75);
   box-shadow: 0 5px 16px -8px rgba(0, 0, 0, 0.75);
@@ -1624,6 +1625,8 @@
 
 .landpage-6 .grid-footer .footer-contact .wrapper-copy {
   text-align: left;
+  align-self: center;
+  margin-top: 30px;
 }
 
 .landpage-6 .grid-footer .footer-contact .wrapper-copy .pay {
@@ -1634,6 +1637,7 @@
   flex-wrap: nowrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+
 }
 
 .landpage-6 .grid-footer .footer-contact .wrapper-copy .pay img {
