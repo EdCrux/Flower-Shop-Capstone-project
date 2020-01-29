@@ -1375,7 +1375,7 @@
   position: absolute;
   -webkit-transform: translate(10%, 50%);
           transform: translate(10%, 50%);
-  background-image: url("/images/location.png");
+  background-image: url("images/location.png");
   background-repeat: no-repeat;
   width: 285px;
   height: 200px;
