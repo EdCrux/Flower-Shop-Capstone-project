@@ -1,14 +1,19 @@
 <img src="/images/coverCapstone.jpg" width="100%">
 
-[## Live Demo](https://rawcdn.githack.com/EdCrux/Flower-Shop-Capstone-project/3a1638a02d5150ee1f386dc0d99efa2ec375d2ca/index.html) 
+[Live Demo](https://rawcdn.githack.com/EdCrux/Flower-Shop-Capstone-project/3a1638a02d5150ee1f386dc0d99efa2ec375d2ca/index.html) 
+
+>The main objective of this project is to build a website. Based on a design project. You can check the reference clic on [here](https://www.behance.net/gallery/69329213/Flower-e-shop)
+
+>Here is my result: 
+
 
 <img src="/images/mockup.png" width="100%">
 
---
+
 
 >## Built With
 
---
+
 
 ### Stack 
 
@@ -31,16 +36,17 @@
 
 ### Install
 
-`git clone` 
-`npm install`
+-`git clone` 
+-`npm install`
 
 ### Assets
 
-PNG images from : [PNG hunter](https://pnghunter.com/)
-The fonts used : [GoogleFonts](https://fonts.google.com/)
-Icons : [Fontawesome](https://fontawesome.com/icons?d=gallery&c=arrows,interfaces)
+- PNG images from : [PNG hunter](https://pnghunter.com/)
+- The fonts used : [GoogleFonts](https://fonts.google.com/)
+- Icons : [Fontawesome](https://fontawesome.com/icons?d=gallery&c=arrows,interfaces)
 
 ### Run tests
+
 
 Style lint
 ` npx stylelint css/style.css`
@@ -48,9 +54,9 @@ Style lint
 ### Deployment
 
 `npm start`
---
+
 ## Author
---
+
 👤 **Eduardo Cruz**
 
 - Github: [EdCrux](https://github.com/EdCrux)
