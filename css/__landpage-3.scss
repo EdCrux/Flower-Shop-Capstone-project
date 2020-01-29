@@ -42,6 +42,11 @@
                 border-radius: 8px;
                 height: 100%;
                 object-fit: cover;
+                cursor: pointer;
+                transition: filter 500ms;
+                &:hover{
+                    filter: brightness(0.30);
+                }
             }
         }
 

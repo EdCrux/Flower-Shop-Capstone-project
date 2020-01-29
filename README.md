@@ -1,3 +1,10 @@
+
+# Music Shop 
+
+### Brief description
+
+The main objective of this project was to build a website based on a design project. You can check the design project [here](https://www.behance.net/gallery/69329213/Flower-e-shop) and see if it is similar. 
+
 <img src="/images/coverCapstone.jpg" width="100%">
 
 ### Live demo
@@ -5,20 +12,9 @@
 Take a look for:
 [Live Demo](https://rawcdn.githack.com/EdCrux/Flower-Shop-Capstone-project/3a1638a02d5150ee1f386dc0d99efa2ec375d2ca/index.html) 
 
-
-
-> Brief description
-
-The main objective of this project was to build a website based on a design project. You can check the design project [here](https://www.behance.net/gallery/69329213/Flower-e-shop) and see if it is similar. 
-
-
 <img src="/images/mockup.png" width="100%">
 
-
-
 >## Built With
-
-
 
 ### Stack 
 

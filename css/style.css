@@ -719,25 +719,12 @@
   -webkit-box-shadow: 0px 5px 16px -8px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 5px 16px -8px rgba(0, 0, 0, 0.75);
   position: relative;
+  color: #fcfcfc;
+  text-decoration: none;
   top: 8px;
+  font-family: "Montserrat", sans-serif;
   -webkit-transition: background 0.5s;
   transition: background 0.5s;
-}
-
-.landpage-1 .hero .titlex .cta-link:hover {
-  cursor: pointer;
-}
-
-.landpage-1 .hero .titlex .cta-link .cta-main {
-  text-decoration: none;
-  color: #fcfcfc;
-  font-family: "Montserrat", sans-serif;
-  border: none;
-  background-color: transparent;
-}
-
-.landpage-1 .hero .titlex .cta-link .cta-main:hover {
-  text-decoration: underline;
 }
 
 .landpage-1 .hero .titlex .cta-link:hover {
@@ -1043,6 +1030,16 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
+  -webkit-transition: -webkit-filter 500ms;
+  transition: -webkit-filter 500ms;
+  transition: filter 500ms;
+  transition: filter 500ms, -webkit-filter 500ms;
+}
+
+.landpage-3 .grid-gallery .gallery-item img:hover {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
 }
 
 .landpage-3 .grid-gallery .slideshow-dots {
@@ -1378,7 +1375,7 @@
   position: absolute;
   -webkit-transform: translate(10%, 50%);
           transform: translate(10%, 50%);
-  background-image: url("./images/location.png");
+  background-image: url("/images/location.png");
   background-repeat: no-repeat;
   width: 285px;
   height: 200px;
@@ -1454,6 +1451,7 @@
   background: #62C312;
   color: #fcfcfc;
   padding: 0.7rem;
+  font-size: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1470,18 +1468,6 @@
 .landpage-6 .grid-footer .footer-contact .cta-subscribe:hover {
   cursor: pointer;
   background-color: #4c9213;
-}
-
-.landpage-6 .grid-footer .footer-contact .cta-subscribe .button-link {
-  text-decoration: none;
-  color: #fcfcfc;
-  font-size: 0.8rem;
-  background-color: transparent;
-  border: none;
-}
-
-.landpage-6 .grid-footer .footer-contact .cta-subscribe .button-link:hover {
-  text-decoration: underline;
 }
 
 .landpage-6 .grid-footer .footer-contact .address-mail {

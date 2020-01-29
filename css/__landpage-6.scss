@@ -17,7 +17,7 @@
         @media only screen and(min-width:992px) {
           transform: translate(180%, 50%);
         }
-        background-image: url("./images/location.png");
+        background-image: url("/images/location.png");
         background-repeat: no-repeat;
         width: 285px;
         height: 200px;
@@ -67,6 +67,7 @@
         background: $bg-green;
         color: $ligth;
         padding: 0.7rem;
+        font-size:0.8rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -74,12 +75,6 @@
         &:hover {
           cursor: pointer;
           background-color: rgb(76, 146, 19);
-        }
-        .button-link {
-          @include reset-link($ligth);
-          font-size: 0.8rem;
-          background-color: transparent;
-          border:none;
         }
       }
 

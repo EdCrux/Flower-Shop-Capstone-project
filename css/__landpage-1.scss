@@ -70,18 +70,11 @@
       .cta-link {
         @include btn(75%);
         position: relative;
+        color:$ligth;
+        text-decoration: none;
         top:8px;
+        font-family: $text;
         transition: background 0.5s;
-        &:hover {
-            cursor:pointer;
-        }
-        .cta-main {
-          @include reset-link($ligth);
-          font-family: $text;
-          border:none;
-          background-color:transparent;
-        }
-
         &:hover {
           background: $primary-hover;
           cursor: pointer;
